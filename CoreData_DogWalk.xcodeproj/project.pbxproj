@@ -13,6 +13,11 @@
 		58EBCF1422D1CF6600787B19 /* CoreData_DogWalk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58EBCF1222D1CF6600787B19 /* CoreData_DogWalk.xcdatamodeld */; };
 		58EBCF1622D1CF6700787B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58EBCF1522D1CF6700787B19 /* Assets.xcassets */; };
 		58EBCF1922D1CF6700787B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58EBCF1722D1CF6700787B19 /* LaunchScreen.storyboard */; };
+		58EBCF2122D1D44B00787B19 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBCF2022D1D44B00787B19 /* CoreDataStack.swift */; };
+		58EBCF2622D1D8E400787B19 /* Dog+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBCF2222D1D8E400787B19 /* Dog+CoreDataClass.swift */; };
+		58EBCF2722D1D8E400787B19 /* Dog+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBCF2322D1D8E400787B19 /* Dog+CoreDataProperties.swift */; };
+		58EBCF2822D1D8E400787B19 /* Walk+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBCF2422D1D8E400787B19 /* Walk+CoreDataClass.swift */; };
+		58EBCF2922D1D8E400787B19 /* Walk+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EBCF2522D1D8E400787B19 /* Walk+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		58EBCF1522D1CF6700787B19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58EBCF1822D1CF6700787B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58EBCF1A22D1CF6700787B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58EBCF2022D1D44B00787B19 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		58EBCF2222D1D8E400787B19 /* Dog+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58EBCF2322D1D8E400787B19 /* Dog+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dog+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		58EBCF2422D1D8E400787B19 /* Walk+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataClass.swift"; sourceTree = "<group>"; };
+		58EBCF2522D1D8E400787B19 /* Walk+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Walk+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +66,10 @@
 		58EBCF0A22D1CF6600787B19 /* CoreData_DogWalk */ = {
 			isa = PBXGroup;
 			children = (
+				58EBCF2A22D1D91E00787B19 /* CoreDataObjects */,
 				58EBCF0B22D1CF6600787B19 /* AppDelegate.swift */,
 				58EBCF0D22D1CF6600787B19 /* ViewController.swift */,
+				58EBCF2022D1D44B00787B19 /* CoreDataStack.swift */,
 				58EBCF0F22D1CF6600787B19 /* Main.storyboard */,
 				58EBCF1522D1CF6700787B19 /* Assets.xcassets */,
 				58EBCF1722D1CF6700787B19 /* LaunchScreen.storyboard */,
@@ -65,6 +77,17 @@
 				58EBCF1222D1CF6600787B19 /* CoreData_DogWalk.xcdatamodeld */,
 			);
 			path = CoreData_DogWalk;
+			sourceTree = "<group>";
+		};
+		58EBCF2A22D1D91E00787B19 /* CoreDataObjects */ = {
+			isa = PBXGroup;
+			children = (
+				58EBCF2222D1D8E400787B19 /* Dog+CoreDataClass.swift */,
+				58EBCF2322D1D8E400787B19 /* Dog+CoreDataProperties.swift */,
+				58EBCF2422D1D8E400787B19 /* Walk+CoreDataClass.swift */,
+				58EBCF2522D1D8E400787B19 /* Walk+CoreDataProperties.swift */,
+			);
+			path = CoreDataObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +161,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EBCF2722D1D8E400787B19 /* Dog+CoreDataProperties.swift in Sources */,
 				58EBCF0E22D1CF6600787B19 /* ViewController.swift in Sources */,
+				58EBCF2922D1D8E400787B19 /* Walk+CoreDataProperties.swift in Sources */,
+				58EBCF2622D1D8E400787B19 /* Dog+CoreDataClass.swift in Sources */,
 				58EBCF0C22D1CF6600787B19 /* AppDelegate.swift in Sources */,
 				58EBCF1422D1CF6600787B19 /* CoreData_DogWalk.xcdatamodeld in Sources */,
+				58EBCF2822D1D8E400787B19 /* Walk+CoreDataClass.swift in Sources */,
+				58EBCF2122D1D44B00787B19 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
